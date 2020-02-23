@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @draft.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @draft.body %>
+</p>
+
+<p>
+  <strong>Recepient:</strong>
+  <%= @draft.recepient %>
+</p>
+
+<p>
+  <strong>Copy:</strong>
+  <%= @draft.copy %>
+</p>
+
+<%= link_to 'Edit', edit_draft_path(@draft) %> |
+<%= link_to 'Back', drafts_path %>
