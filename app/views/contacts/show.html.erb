@@ -1,5 +1,10 @@
 <p id="notice"><%= notice %></p>
 
+<span>
+  <%= link_to 'Edit', edit_contact_path(@contact) %>
+  <%= link_to 'Destroy', @contact, method: :delete, data: { confirm: 'Are you sure?' } %>
+</span>
+
 <p>
   <strong>First Name:</strong>
   <%= @contact.first_name %>
@@ -14,3 +19,7 @@
   <strong>Email:</strong>
   <%= @contact.email %>
 </p>
+
+<br>
+
+<%= link_to 'Contacts List', contacts_path %>

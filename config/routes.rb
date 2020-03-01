@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'pages#welcome'
   resources :drafts
   resources :contacts
   get 'pages/welcome'
