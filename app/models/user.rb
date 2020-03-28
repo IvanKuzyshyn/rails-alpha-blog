@@ -8,5 +8,6 @@ class User < ApplicationRecord
   validates :last_name, presence: true, length: { minimum: 2 }
   validates :email, format: { with: /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i, message: "should be valid" }
   validates :email, uniqueness: true
-  validates :password, presence: true, length: { minimum: 8 }
+
+  has_secure_password
 end
