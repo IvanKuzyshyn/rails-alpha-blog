@@ -4,4 +4,8 @@ class ApplicationController < ActionController::Base
   def render_json(data)
     render json: data
   end
+
+  def signed_in?
+    !session[:user_id].nil?
+  end
 end
