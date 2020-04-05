@@ -21,10 +21,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.1.6, ruby-2.3.7-p456) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="i18n (v1.8.2, ruby-2.3.7-p456) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="thread_safe (v0.3.6, ruby-2.3.7-p456) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="tzinfo (v1.2.6, ruby-2.3.7-p456) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">
     <LOAD_PATH number="0" />
