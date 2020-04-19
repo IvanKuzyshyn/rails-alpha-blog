@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2020_04_19_104802) do
 
-  create_table "article_category", force: :cascade do |t|
+  create_table "article_categories", force: :cascade do |t|
     t.integer "article_id"
     t.integer "category_id"
   end
