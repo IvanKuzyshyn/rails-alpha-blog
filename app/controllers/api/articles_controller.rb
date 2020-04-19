@@ -1,5 +1,5 @@
 class Api::ArticlesController < ApplicationController
-  before_action :set_article, only: [:destroy, :show]
+  before_action :set_article, only: %i[destroy show]
 
   def index
     articles = Article.all
@@ -10,11 +10,9 @@ class Api::ArticlesController < ApplicationController
     render_json(@article)
   end
 
-  def create
-  end
+  def create; end
 
-  def update
-  end
+  def update; end
 
   def destroy
     if @article.destroy
