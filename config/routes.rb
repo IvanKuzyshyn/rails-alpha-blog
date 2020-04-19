@@ -5,8 +5,8 @@ Rails.application.routes.draw do
   post 'auth/sign_up'
   namespace :api do
     resources :users, only: [:index, :show, :create, :update, :destroy] do
-      resources :articles, only: [:index, :show, :create, :update, :destroy]
-      resources :comments, only: [:index, :show, :create, :update, :destroy]
+      resources :articles
+      resources :comments
     end
     resources :categories, except: [:destroy]
   end
