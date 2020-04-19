@@ -5,6 +5,10 @@ class ApplicationController < ActionController::Base
     render json: data
   end
 
+  def render_errors(entity)
+    render json: entity.errors, status: :unprocessable_entity
+  end
+
   def signed_in?
     !session[:user_id].nil?
   end
